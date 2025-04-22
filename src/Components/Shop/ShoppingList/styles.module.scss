@@ -1,0 +1,23 @@
+.list {
+  list-style: none;
+  text-align: left;
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: darkgrey;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+
+    div {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}

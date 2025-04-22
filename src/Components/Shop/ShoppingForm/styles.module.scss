@@ -1,0 +1,49 @@
+.form {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+
+  label {
+    &:nth-child(1) {
+      flex: 1;
+    }
+
+    &:nth-child(2) {
+      width: 80px;
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+
+  input, select {
+    padding: 5px 10px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid royalblue;
+    background-color: aliceblue;
+    outline: none;
+  }
+
+  select {
+    width: 150px;
+  }
+
+  button {
+    border: 1px solid #000;
+    transition: color .3s ease, background-color .3s ease;
+    width: 200px;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+
+  .error {
+    color: red;
+    text-align: left;
+  }
+}

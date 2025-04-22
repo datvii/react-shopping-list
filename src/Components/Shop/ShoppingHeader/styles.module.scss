@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  flex-direction: column;
+
+  &__search {
+    margin-bottom: 20px;
+
+    input {
+      padding: 5px 10px;
+      height: 45px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid royalblue;
+      background-color: aliceblue;
+      outline: none;
+
+      &:disabled {
+        border-color: gray;
+        background-color: rgb(215, 215, 215);
+      }
+    }
+  }
+
+  &__filters {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    button {
+      border: 1px solid #000;
+      transition: color .3s ease, background-color .3s ease;
+      flex: 1;
+
+      &:hover:not(:disabled) {
+        background-color: #000;
+        color: #fff;
+      }
+
+      &:disabled {
+        border-color: gray;
+        background-color: rgb(215, 215, 215);
+      }
+    }
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+}
