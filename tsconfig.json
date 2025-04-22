@@ -12,5 +12,5 @@
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ],
-  "include": ["src", "./jest.setup.ts"],
+  // "include": ["src", "./jest.setup.ts"],
 }
